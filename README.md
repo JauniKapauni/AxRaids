@@ -1,6 +1,9 @@
 # AxRaids
 > Minecraft plugin to manage the default behaviour of minecraft raids
 ---
+## Requirements
+- Minecraft Paper 26.1.2 Server
+---
 ## Features
 - Activate/Enable raids
 ---
