@@ -10,6 +10,13 @@ public final class AxRaids extends JavaPlugin {
         // Plugin startup logic
         saveDefaultConfig();
         getServer().getPluginManager().registerEvents(new RaidTriggerEventListener(this), this);
+        getLogger().info("");
+        getLogger().info("----------------------------------------");
+        getLogger().info("Name: " + getName());
+        getLogger().info("Version: " + getDescription().getVersion());
+        getLogger().info(String.join("Authors: " + ", ", getDescription().getAuthors()));
+        getLogger().info("----------------------------------------");
+        getLogger().info("");
     }
 
     @Override
