@@ -23,6 +23,7 @@ raids_enabled: false
 ---
 ## Support
 Discord: [AxForge](https://discord.gg/rYSxV4daS8)
+
 ---
 ## License
 AxRaids is licensed under the permissive MIT License. Please see [LICENSE](https://github.com/JauniKapauni/AxRaids/blob/master/LICENSE) for more info.
