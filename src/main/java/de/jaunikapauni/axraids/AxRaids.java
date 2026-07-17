@@ -5,10 +5,13 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class AxRaids extends JavaPlugin {
 
+    boolean raidsEnabled;
+
     @Override
     public void onEnable() {
         // Plugin startup logic
         saveDefaultConfig();
+        loadConfig();
         getServer().getPluginManager().registerEvents(new RaidTriggerEventListener(this), this);
         getLogger().info("");
         getLogger().info("----------------------------------------");
@@ -22,5 +25,13 @@ public final class AxRaids extends JavaPlugin {
     @Override
     public void onDisable() {
         // Plugin shutdown logic
+    }
+
+    public void loadConfig(){
+        raidsEnabled = getConfig().getBoolean("raids_enabled", false);
+    }
+
+    public boolean isRaidsEnabled() {
+        return raidsEnabled;
     }
 }

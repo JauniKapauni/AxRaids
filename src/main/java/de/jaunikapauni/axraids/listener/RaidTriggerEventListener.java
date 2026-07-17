@@ -13,6 +13,8 @@ public class RaidTriggerEventListener implements Listener {
 
     @EventHandler
     public void onRaid(RaidTriggerEvent e){
-        e.setCancelled(!reference.getConfig().getBoolean("raids_enabled"));
+        if(!reference.isRaidsEnabled()){
+            e.setCancelled(true);
+        }
     }
 }
